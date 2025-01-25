@@ -1,0 +1,314 @@
+
+/* Set initial variables and values */
+html {
+    --text: #f0f0f0;
+    --background: #0f0f0f;
+    --primary: #f0f0f0;
+    --secondary: #f0f0f0;
+    --accent: #eb8443;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+body {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 3.053rem; /* 48.8px */}
+
+h2 {font-size: 2.442rem; /* 39.04px */}
+
+h3 {font-size: 1.954rem; /* 31.2px */}
+
+h4 {font-size: 1.563rem; /* 24.96px */}
+
+h5 {font-size: 1.250rem; /* 20px */}
+
+small {font-size: 0.800rem; /* 12.8px */}
+
+
+body {
+    width: 768px;
+    margin: 0 auto;
+    line-height: 1.2;
+    margin-bottom: 60px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.logo-text {
+    font-size: 1.250rem;
+    font-weight: 600;
+}
+
+.logo-text:hover {
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.nav-list-item {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-list-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.banner-container {
+    width: 100%;
+    height: 180px;
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.2), rgba(15, 15, 15, 1)), url('/src/assets/imgs/home-page/banners/location-banner-002.png');
+    border-radius: 10px 10px 0px 0px;
+}
+
+.clock-container {
+    background: rgba(15, 15, 15, 0.5);
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    grid-column-start: 4;
+    grid-column-end: span 1;
+
+   margin: 10px;
+   margin-left: 50px;
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   font-size: 12.8px
+}
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.icon-container {
+    width: 24px;
+    margin: 10px;
+}
+
+.icon-container:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.technology-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.technology-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.technology-container:hover {
+    opacity: 0.5;
+}
+
+.technology-icon {
+    width: 26px;
+    margin: 0 5px;
+}
+
+.technology-icon img {
+    width: 100%;
+    height: auto;
+}
+
+#javascript-icon {
+    border-radius: 4px;
+}
+
+#mongo-icon {
+    border-radius: 4px;
+}
+
+.experience-container {
+    width: 87%;
+    margin: 0 auto;
+}
+
+.position {
+    width: 100%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bullet-point {
+    width: 0.800rem;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px 0px;
+}
+
+.position-info {
+    margin: 0 25px;
+    width: 100%;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-title {
+    margin: 0px;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.description-list {
+    padding-left: 18px;
+    font-size: 12px;
+}
+
+.project-gallery {
+    width: 85%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    width: 100%;
+    height: 400px;
+
+    background-image: url(/src/assets/imgs/home-page/projects/pokedex-001.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+    transition: ease-in-out 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.project-filter {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(15, 15, 15, 0.2);
+
+    transition: ease-in-out 0.2s;
+}
+
+.project-filter:hover {
+    background-color: rgba(15, 15, 15, 0.0);
+    transition: ease-in-out 0.2s;
+}
+
+.project-info {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.project-title {
+    margin: 5px 0px;
+}
+
+.project-technologies {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tech-info {
+    margin: 0px 10px 5px 0px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-technologies img {
+    width: 20px;
+    height: auto;
+    margin: 0px 5px 0px 0px;
+}
+
+.tech-info h6 {
+    margin: 0px 15px 0px 0px;
+    font-weight: 400;
+    font-size: small;
+}
+
+.project-description {
+    width: 80%;
+
+    font-size: 12px;
+    margin: 5px 0px 15px 0px;
+}
+
+#project-002 {
+    background-image: url("/src/assets/imgs/home-page/projects/ro-sham-bo-001.jpg");
+}
