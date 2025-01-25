@@ -88,6 +88,7 @@ a {
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.2), rgba(15, 15, 15, 1)), url("./../../assets/imgs/home-page/banners/location-banner-002.png");
+    background-position: center;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -236,6 +237,12 @@ a {
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    border-color:rgba(240, 240, 240, 0.2);
+    border-width: 2px;
+    border-style: solid;
 
     transition: ease-in-out 0.2s;
 }
@@ -244,6 +251,8 @@ a {
     transform: scale(1.05);
     transition: ease-in-out 0.2s;
     cursor: pointer;
+
+    border-color:rgba(240, 240, 240, 0.8);
 }
 
 .project-filter {
@@ -258,6 +267,14 @@ a {
 .project-filter:hover {
     background-color: rgba(15, 15, 15, 0.0);
     transition: ease-in-out 0.2s;
+}
+
+#filter-003 {
+    background-color: rgba(15, 15, 15, 0.7);
+}
+
+#filter-003:hover {
+    background-color: rgba(15, 15, 15, 0.5);
 }
 
 .project-info {
@@ -311,6 +328,14 @@ a {
 
 #project-002 {
     background-image: url("./../../assets/imgs/home-page/projects/ro-sham-bo-001.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#project-003 {
+    background-image: url("./../../assets/imgs/home-page/projects/jwalker-swe-portfolio-001.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -328,5 +353,23 @@ a {
 
     .project-filter {
         background-color: rgba(15, 15, 15, 0.6);
+    }
+
+    .clock-container {
+        grid-row-start: 1;
+        grid-row-end: span 1;
+        grid-column-start: 3;
+        grid-column-end: span 2;
+    }
+
+    .banner-container {
+        background-position: center;
+    }
+
+    #project-003 {
+        background-size: 40rem;
+        background-position: top;
+        background-repeat: no-repeat;
+        overflow: hidden;
     }
 }
