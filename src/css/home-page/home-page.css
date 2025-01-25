@@ -312,3 +312,21 @@ a {
 #project-002 {
     background-image: url("/src/assets/imgs/home-page/projects/ro-sham-bo-001.jpg");
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 368px;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .technology-name {
+        display: none;
+    }
+
+    .project-filter {
+        background-color: rgba(15, 15, 15, 0.6);
+    }
+}
