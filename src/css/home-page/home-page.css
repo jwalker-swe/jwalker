@@ -7,7 +7,7 @@ html {
     --secondary: #f0f0f0;
     --accent: #eb8443;
     background-color: var(--background);
-    color: var(--text);
+    color: #f0f0f0;
 }
 
 body {
@@ -44,7 +44,7 @@ body {
 
 .nav-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 20px auto;
 }
@@ -69,6 +69,10 @@ a {
     color: var(--text);
 }
 
+.button {
+    transition: ease-in-out 0.2s;
+}
+
 .nav-list-item {
     list-style: none;
     margin: 0 10px;
@@ -90,6 +94,7 @@ a {
     background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.2), rgba(15, 15, 15, 1)), url("./../../assets/imgs/home-page/banners/location-banner-002.png");
     background-position: center;
     border-radius: 10px 10px 0px 0px;
+    transition: ease-in-out 0.2s;
 }
 
 .clock-container {
@@ -112,6 +117,15 @@ a {
    font-size: 12.8px
 }
 
+.divider {
+    opacity: 0.2;
+    transition: ease-in-out 0.8s;
+}
+
+.divider.active {
+    opacity: 0.8;
+}
+
 .name-container {
     display: flex;
     justify-content: space-between;
@@ -123,6 +137,10 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0 10px;
+}
+
+.email {
+    margin: 0 15px;
 }
 
 .icon-container {
@@ -219,6 +237,10 @@ a {
     font-size: 12px;
 }
 
+#project-heading {
+    text-align: center;
+}
+
 .project-gallery {
     width: 85%;
     margin: 0 auto;
@@ -234,7 +256,7 @@ a {
     height: 400px;
 
     background-image: url("./../../assets/imgs/home-page/projects/pokedex-001.jpg");
-    background-size: cover;
+    background-size: 52rem;
     background-position: center;
     border-radius: 10px;
     background-repeat: no-repeat;
@@ -344,6 +366,18 @@ a {
     }
 
     .logo-text {
+        display: none;
+    }
+
+    .nav-container {
+        justify-content: center;
+    }
+
+    .nav-list {
+        padding: 0px;
+    }
+
+    .email {
         display: none;
     }
 

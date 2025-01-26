@@ -11,7 +11,7 @@
 
     <!--Import stylesheets-->
     <link rel="stylesheet" href="./../../css/home-page/home-page.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode,light_mode" />
     
     <title>Jordan Walker - Projects</title>
 </head>
@@ -19,7 +19,9 @@
     <header>
         <nav class="nav-container">
             <div class="logo-container">
-                <span class="logo-text">Jordan Walker</span>
+                <a href="./../../../index.html">
+                    <span class="logo-text">Jordan Walker</span>
+                </a>
             </div>
             <ul class="nav-list">
                 <a href="./../../../index.html">
@@ -31,33 +33,12 @@
                 <a href="./projects.html">
                     <li class="nav-list-item">Projects</li>
                 </a>
-                <a href="#">
-                    <li class="nav-list-item">Contact</li>
-                </a>
-                <div class="button">
-                    <div class="img-container nav-list-item">
-                        <span class="material-symbols-outlined">
-                            dark_mode
-                        </span>
-                    </div>
-                </div>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="banner-container">
-           <div class="clock-container">
-                <div class="time">
-                    <span class="hrs">02</span>
-                    <span class="divider">:</span>
-                    <span class="minutes">23</span>
-                    <span class="meridiem">PM</span>
-                    <span class="time-zone">EST</span>
-                </div>
-           </div>
-        </div>
         <section class="projects">
-            <h3>Projects</h3>
+            <h3 id="project-heading">Projects</h3>
             <div class="project-gallery">
                 <section class="project" id="project-001">
                     <div class="project-filter">
@@ -128,7 +109,7 @@
                                 </div>
                             </div>
                             <p class="project-description">
-                                Website allowing users to search and get stats for their favorite pokemon.
+                                My personal portfolios website.
                             </p>
                         </div>
                     </div>
