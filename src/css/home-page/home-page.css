@@ -140,12 +140,16 @@ a {
 }
 
 .email {
-    margin: 0 15px;
+    margin: 0 0px;
 }
 
 .icon-container {
     width: 24px;
     margin: 10px;
+}
+
+#github-icon-container {
+    margin: 0px 10px;
 }
 
 .icon-container:hover {
@@ -319,10 +323,12 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    margin: 5px 0px;
 }
 
 .tech-info {
-    margin: 0px 10px 5px 0px;
+    margin: 0px 10px 0px 0px;
 
     display: flex;
     justify-content: flex-start;
@@ -341,11 +347,47 @@ a {
     font-size: small;
 }
 
+.project-description-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
 .project-description {
     width: 80%;
 
     font-size: 12px;
-    margin: 5px 0px 15px 0px;
+    margin: 5px 0px 5px 0px;
+}
+
+.github-link {
+    border-radius: 20px;
+}
+
+.github-icon {
+    width: 16px;
+}
+
+.visit-icon {
+    font-weight: 400;
+    width: 16px;
+}
+
+.last-row {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-container h6 {
+    font-size: small;
+    font-weight: 400;
+    margin: 0px 2px;
 }
 
 #project-002 {
@@ -358,6 +400,43 @@ a {
     background-image: url("./../../assets/imgs/home-page/projects/jwalker-swe-portfolio-001.jpg");
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.project-icon-container {
+    width: 20%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0px 0px 0px 0px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.link-title {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.icon-text {
+    margin: 0px 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.link-title:hover {
+    opacity: 0.5;
 }
 
 @media only screen and (max-width: 768px) {
