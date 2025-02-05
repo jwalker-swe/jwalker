@@ -515,6 +515,10 @@ a {
         font-size: 0.9rem;
     }
 
+    .source-link {
+        margin-left: 5px;
+    }
+
     .project-icon-container {
         margin: 5px 0px;
     }
