@@ -422,6 +422,12 @@ a {
     overflow: hidden;
 }
 
+#project-005 {
+    background-image: url("./../../assets/imgs/home-page/projects/crate-001.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
 .project-icon-container {
     width: 20%;
 
