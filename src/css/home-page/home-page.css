@@ -424,6 +424,7 @@ a {
 
 #project-005 {
     background-image: url("./../../assets/imgs/home-page/projects/crate-001.png");
+    background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
 }
